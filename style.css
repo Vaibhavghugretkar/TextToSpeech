@@ -1,0 +1,157 @@
+@import url( 'https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900itali');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins";
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:url("./letter\ background.webp");
+}
+
+.container{
+    width:690px;
+    background:white;
+    border-radius:8px;
+    padding: 30px;
+}
+
+.wrapper{
+    border-radius:5px;
+    border: 1px solid black;
+
+}
+.wrapper .text-input{
+    display:flex;
+    border-bottom: 1px solid black;
+}
+
+.text-input .to-text{
+    border-left: 1px solid gray;
+    border-radius: 0px;
+}
+
+.text-input textarea{
+    height:250px;
+    width:100%;
+    border:none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    padding: 10px 15px;
+    resize: none;
+}
+
+.controls, li{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* list-style: none; */
+    /* padding:12px 15px; */
+}
+.controls{
+    padding:12px 15px;
+    list-style: none;
+}
+
+.controls .icons span{
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+    width:50px;
+    justify-content: center;
+}
+
+.controls  select{
+    border:none;
+    outline: none;
+    background: none;
+    font-size:16px;
+}
+
+.controls .exchange{
+    font-size: 16px;
+    cursor: pointer;
+    color:black;
+     
+}
+
+
+.controls .row-from{
+    padding-right:15px;
+    border: 1px soild gray;
+}
+
+.container button{
+    width:100%;
+    padding:12px;
+    margin-top: 20px;
+    border:none;
+    outline: none;
+    background: rgb(69, 20, 69);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    color:white;
+}
+
+/* *****************MOBILE VIEW*****************/
+@media(max-width:768px){
+    .container{
+        width:380px;
+        justify-content: center;
+        align-items: center;
+    }
+    .controls, li{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        /* list-style: none; */
+        /* padding:12px 15px; */
+    }
+    .controls  select {
+        font-size:12px;
+        /* margin-left:-48px; */
+        /* width:50%; */
+    }
+    .row from{
+        margin-left:30px;
+    }
+    .material-symbols-outlined{
+        font-size:18px;
+    }
+  #fromVolume{
+    font-size: 20px;
+    margin-left:-8px;
+  }
+  #toVolume{
+    font-size: 20px;
+    margin-right:-30px;
+  }
+  #fromCopy{
+    font-size: 20px;
+    margin-left:-30px;
+  }
+  #toCopy{
+    font-size: 20px;
+    margin-right:-20px;
+  }
+  select {
+margin-left:-40px;
+width:60%;
+align-items:center;
+justify-content: center;
+  }
+  .exchange{
+margin-left:-10px;
+font-size:18px;
+  }
+  .text-input textarea{
+    font-size:12px;
+  }
+}

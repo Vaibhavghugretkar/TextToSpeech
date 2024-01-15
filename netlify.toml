@@ -1,0 +1,4 @@
+[[redirects]]
+from= "/*"
+to = "/language translator.html"
+status = 200
